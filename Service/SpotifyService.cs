@@ -28,7 +28,7 @@ namespace Analify.Service
                 {
                     sb.Append(art.Name).Append(" ");
                 });
-                return new Model.Track(it.Name, sb.ToString(), it.DurationMs.ToString(), it.Popularity.ToString());
+                return new Model.Track(it.Name, sb.ToString(), it.DurationMs.ToString(), it.Popularity.ToString(),it.Uri);
             }).ToList());
         }
 
